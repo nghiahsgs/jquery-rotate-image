@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quay so</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<style>
+    #kiet img{
+        transition: all 3s
+    }
+    
+</style>
+
+<body>
+    <div id="kiet">
+        <img src="kiet.jpg" width="150px" height="150px">
+    </div>
+    <br><br><br>
+    <button id="btn_quay">Quay</button>
+</body>
+</html>
+
+<script>
+    $('#btn_quay').click(()=>{
+        console.log('btn_quay click')
+        $("#kiet img").css({'transform': 'rotate(-45deg)'});
+        // transform: rotate(20deg);
+    })
+</script>
